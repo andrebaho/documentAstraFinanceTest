@@ -71,13 +71,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer aa5b1638-e9d5-4461-8acd-36849b4b8bb4",
+						"value": "Bearer {{access_token_test}}",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"A2\",\r\n    \"content\": \"cerita \"\r\n}",
+					"raw": "{\r\n    \"title\": \"andre\",\r\n    \"content\": \" test \"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -187,25 +187,57 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer aa5b1638-e9d5-4461-8acd-36849b4b8bb4",
+						"value": "Bearer {{access_token_test}}",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/notes/2",
+					"raw": "http://8.219.127.212:8080/api/notes",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"8",
+						"219",
+						"127",
+						"212"
 					],
 					"port": "8080",
 					"path": [
 						"api",
-						"notes",
-						"2"
+						"notes"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token_test",
+			"value": ""
+		},
+		{
+			"key": "refresh_token_test",
+			"value": ""
 		}
 	]
 }
